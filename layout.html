@@ -1,363 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>電子報 Layout</title>
-  <style>
-    body {
-      background-color: #ebe7e1;
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Microsoft JhengHei", sans-serif;
-      color: #444444;
-    }
-
-    #main-section {
-      width: 600px;
-      margin: 0 auto;
-    }
-
-    h1#title {
-      text-align: center;
-    }
-
-    p.subtitle {
-      text-align: center;
-      font-size: 20px;
-      letter-spacing: 1px;
-      margin: 0;
-    }
-
-    hr.normal {
-      border-top: 2px solid #444444;
-    }
-    hr.thick {
-      border-top: 5px solid #444444;
-    }
-
-    img#logo {
-      width: 270px;
-      height: 55px;
-    }
-
-    img#banner {
-      width: 550px;
-      height: 550px;
-      border: none;
-    }
-
-    div.image-container img {
-      max-width: 100%;
-      max-height: 100%;
-    }
-
-    div.image-container {
-      text-align: center;
-    }
-
-    div#banner-image-container {
-      margin: 39px 0;
-      border: none;
-    }
-
-    div.volume {
-      text-align: center;
-      margin-bottom: 39px;
-    }
-    div.volume p.volume-title {
-      font-size: 20px;
-      font-weight: 900;
-      margin: 0;
-    }
-    div.volume p.volume-date {
-      font-size: 15px;
-      font-weight: 500;
-      margin: 0;
-    }
-
-    h2.title {
-      font-size: 35px;
-      font-weight: 600;
-      text-indent: -24px;
-    }
-    h2.title > img {
-      width: 16px;
-      height: 36px;
-      padding-bottom: 5px;
-      vertical-align: middle;
-    }
-
-    p.content {
-      font-size: 16px;
-      line-height: 1.75;
-      padding: 0 25px;
-    }
-
-    div.callout {
-      border-radius: 5px;
-      padding: 16px 18px;
-      margin: 16px 25px;
-      background-color: #e1ddd6;
-      line-height: 1.75;
-    }
-
-    div.work {
-      border: solid 3px #444444;
-      padding: 44px 25px 31px;
-      margin-bottom: 35px;
-    }
-
-    div.work figure.type {
-      margin-bottom: 41px;
-      text-align: center;
-    }
-
-    div.work h3 {
-      font-size: 22px;
-      font-weight: 600;
-      margin-top: 0;
-    }
-
-    div.work div.preview {
-      width: 550px;
-    }
-
-    div.work div.preview img {
-      max-width:100%;
-      max-height:100%;
-    }
-    
-    div.work p.work-content {
-      margin: 30px 0 25px;
-    }
-
-    img.youtube {
-      width: 170px;
-      height: 40px;
-    }
-
-    img.podcast {
-      width: 185px;
-      height: 46px;
-    }
-    
-    div.work div.cta {
-      text-align: center;
-    }
-
-    button {
-      width: 215px;
-      height: 46px;
-      background: #ebe7e1;
-      border: solid 2px #444444;
-      border-radius: 0;
-      font-size: 20px;
-      font-weight: 500;
-      color: #444444;
-      cursor: pointer;
-    }
-
-    div#footer-content {
-      padding: 35px 0;
-      margin: 0 auto;
-      width: 550px;
-    }
-
-    div#footer-content h4 {
-      font-size: 20px;
-      font-weight: 600;
-      margin: 0 0 20px;
-    }
-
-    table#works td.type {
-      width: 80px;
-    }
-
-    table#works td.link {
-      padding-left: 10px;
-    }
-
-    a {
-      text-decoration: none;
-      color: #387cca;
-    }
-
-    img#footer-logo {
-      width: 186px;
-      height: 52px;
-    }
-
-    div#footer-logo-container {
-      margin: 39px 0 20px;
-    }
-
-    div#copyright {
-      text-align: center;
-      font-size: 14px;
-      font-weight: 600;
-      margin-bottom: 40px;
-      line-height: 2.5;
-    }
-
-    @media (max-width: 667px) {
-      body {
-        width: 100%;
-      }
-
-      div#wrapper {
-        overflow-x:hidden;
-      }
-
-      #main-section {
-        width: 100%;
-      }
-
-      img#banner {
-        width: 100%;
-        height: 100%;
-      }
-
-      div.work div.preview {
-        width: 100%;
-      }
-
-      div#footer-content {
-        width: 100%;
-        padding: 12px;
-      }
-
-      div.image-container {
-        padding: 12px;
-      }
-
-      div.image-container img {
-        max-width: 100%;
-        max-height: 100%;
-        margin: 0 auto;
-      }
-
-      div.work {
-        margin: 12px;
-        padding: 22px 25px 31px;
-        margin-bottom: 35px;
-      }
-
-      h2.title {
-        padding-left: 20px;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>電子報 Layout</title>
+    <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
-  <header>
-    <h1 id="title">
-      <img id="logo" src="./images/logo.png" />
-    </h1>
-    <hr class="normal">
-    <p class="subtitle">
-      定時幫你補充桌遊營養素
-    </p>
-    <hr class="thick">
-  </header>
+    <header>
+        <h1 id="title">
+            <img id="logo" src="./images/logo.png" />
+        </h1>
+        <hr class="normal">
+        <p class="subtitle">
+            定時幫你補充桌遊營養素
+        </p>
+        <hr class="thick">
+    </header>
 
-  <section id="main-section">
-    <div class="image-container" id="banner-image-container">
-      <img id="banner" src="./images/banner.png" />
-    </div>
-    <div class="volume">
-      <p class="volume-title">第 01 期 - 創刊號</p>
-      <p class="volume-date">JUNE 08-15, 2021</p>
-    </div>
+    <section id="main-section">
+        <div class="image-container" id="banner-image-container">
+            <img id="banner" src="./images/banner.png" />
+        </div>
+        <div class="volume">
+            <p class="volume-title">第 01 期 - 創刊號</p>
+            <p class="volume-date">JUNE 08-15, 2021</p>
+        </div>
 
-    <h2 class="title">
-      <img src="./images/chop.png" />
-      <span>本週桌遊大事記</span>
-    </h2>
-    <p class="content">
-      本週桌遊屆有三十多款遊戲登場。其中最讓我喜歡的就是以下這款啦。《帝國爭霸》學習曲線陡峭，初玩容易忘東忘西，但到中期之後倒吃甘蔗，就能體驗到遊戲的樂趣。因為隨機要素變少了，戰略的優劣十分明顯可見，但即使沒有獲勝，還是能在遊戲過程中體會到有趣之處，讓人想要再來一盤。是今年非常喜歡的作品！
-    </p>
+        <h2 class="title">
+            <img src="./images/chop.png" />
+            <span>本週桌遊大事記</span>
+        </h2>
+        <p class="content">
+            本週桌遊屆有三十多款遊戲登場。其中最讓我喜歡的就是以下這款啦。《帝國爭霸》學習曲線陡峭，初玩容易忘東忘西，但到中期之後倒吃甘蔗，就能體驗到遊戲的樂趣。因為隨機要素變少了，戰略的優劣十分明顯可見，但即使沒有獲勝，還是能在遊戲過程中體會到有趣之處，讓人想要再來一盤。是今年非常喜歡的作品！
+        </p>
 
-    <div class="callout">
-      (右下) 哈布斯堡王朝的利奧波德一世，西班牙繼承戰爭的發起者<br>詳情請見 【桌遊心得】帝國爭霸 (Imperial Struggle) - 走訪英法百年競逐 一文
-    </div>
+        <div class="callout">
+            (右下) 哈布斯堡王朝的利奧波德一世，西班牙繼承戰爭的發起者<br>詳情請見 【桌遊心得】帝國爭霸 (Imperial Struggle) - 走訪英法百年競逐 一文
+        </div>
 
-    <div class="work">
-      <figure class="type">
-        <img class="youtube" src="./images/youtube.png" />
-      </figure>
-      <h3>
-        【得分沙發】我們 2020 玩的 TOP 5 好讚桌遊！
-      </h3>
-      <div class="preview">
-        <img src="./images/figure.jpg" />
-      </div>
-      <p class="work-content">
-        「讓知名評論家愛不釋手的漫威桌遊 ⋯⋯ 就是這款二頭身風格的作品？」一開始看見《漫威：集結（Marvel: United）》時，腦袋裡冒出了這樣的疑惑。
-      </p>
-      <div class="cta">
-        <button onclick="window.open('https://link.chtbl.com/gs8Jde_z');">前往觀看</button>
-      </div>
-    </div>
+        <div class="work">
+            <figure class="type">
+                <img class="youtube" src="./images/youtube.png" />
+            </figure>
+            <h3>
+                【得分沙發】我們 2020 玩的 TOP 5 好讚桌遊！
+            </h3>
+            <div class="preview">
+                <img src="./images/figure.jpg" />
+            </div>
+            <p class="work-content">
+                「讓知名評論家愛不釋手的漫威桌遊 ⋯⋯ 就是這款二頭身風格的作品？」一開始看見《漫威：集結（Marvel: United）》時，腦袋裡冒出了這樣的疑惑。
+            </p>
+            <div class="cta">
+                <button onclick="window.open('https://link.chtbl.com/gs8Jde_z');">前往觀看</button>
+            </div>
+        </div>
 
-    <div class="work">
-      <figure class="type">
-        <img class="podcast" src="./images/podcast.png" />
-      </figure>
-      <h3>
-        【EP21】遠端桌遊的各種姿勢 - 救贖 x 翻桌 x 中離狗！
-      </h3>
-      <p class="work-content">
-        好懷念與大家一起見面打桌遊的日子 ……<br>嗨，大家晚安，經過了各種遠端錄音的踩雷之後，我們終於跨出第一步啦！這一次要和大家聊的是「遠端玩桌遊」這回事，嚴峻疫情下的桌遊人們，該怎麼解饞呢？遠端桌遊經驗大公開！
-      </p>
-      <div class="cta">
-        <button onclick="window.open('https://link.chtbl.com/gs8Jde_z');">前往觀聽</button>
-      </div>
-    </div>
-  </section>
+        <div class="work">
+            <figure class="type">
+                <img class="podcast" src="./images/podcast.png" />
+            </figure>
+            <h3>
+                【EP21】遠端桌遊的各種姿勢 - 救贖 x 翻桌 x 中離狗！
+            </h3>
+            <p class="work-content">
+                好懷念與大家一起見面打桌遊的日子 ……<br>嗨，大家晚安，經過了各種遠端錄音的踩雷之後，我們終於跨出第一步啦！這一次要和大家聊的是「遠端玩桌遊」這回事，嚴峻疫情下的桌遊人們，該怎麼解饞呢？遠端桌遊經驗大公開！
+            </p>
+            <div class="cta">
+                <button onclick="window.open('https://link.chtbl.com/gs8Jde_z');">前往觀聽</button>
+            </div>
+        </div>
+    </section>
 
-  <footer>
-    <hr class="normal">
-    <div id="footer-content">
-      <h4>拌飯精選配菜</h4>
-      <table id="works">
-        <tbody>
-          <tr>
-            <td class="type">Podcast</td>
-            <td>|</td>
-            <td class="link">
-              <a href="https://youtu.be/49LvaaQjfRU">【EP20】Eclipse 2nd 星蝕 - 46656分之1的奇蹟</a>
-            </td>
-          </tr>
-          <tr>
-            <td class="type">Youtube</td>
-            <td>|</td>
-            <td class="link">
-              <a>【介紹】時間管理大師 《Gentes 氏族》遊戲特色與簡介</a>
-            </td>
-          </tr>
-          <tr>
-            <td class="type">Article</td>
-            <td>|</td>
-            <td class="link">
-              <a>【新聞】不列顛東印度公司 (John Company) 即將開始募資</a>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <hr class="thick">
-    <div class="image-container" id="footer-logo-container">
-      <a href="https://www.facebook.com/BoardGameBanFan" target="_blank">
-        <img id="footer-logo" src="./images/footer-logo.png" />
-      </a>
-    </div>
-    <div id="copyright">
-      拌飯特餐 by 桌遊拌飯<br>
-      ARCHETYPE Rd., Taipei, Taiwan <br>
-      Sent to iamcdxn@gmail.com — <a>Unsubscribe</a><br>
-      Delivered by TinyLetter
-    </div>
-  </footer>
+    <footer>
+        <hr class="normal">
+        <div id="footer-content">
+            <h4>拌飯精選配菜</h4>
+            <table id="works">
+                <tbody>
+                    <tr>
+                        <td class="type">Podcast</td>
+                        <td>|</td>
+                        <td class="link">
+                            <a href="https://youtu.be/49LvaaQjfRU">【EP20】Eclipse 2nd 星蝕 - 46656分之1的奇蹟</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="type">Youtube</td>
+                        <td>|</td>
+                        <td class="link">
+                            <a>【介紹】時間管理大師 《Gentes 氏族》遊戲特色與簡介</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="type">Article</td>
+                        <td>|</td>
+                        <td class="link">
+                            <a>【新聞】不列顛東印度公司 (John Company) 即將開始募資</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <hr class="thick">
+        <div class="image-container" id="footer-logo-container">
+            <a href="https://www.facebook.com/BoardGameBanFan" target="_blank">
+                <img id="footer-logo" src="./images/footer-logo.png" />
+            </a>
+        </div>
+        <div id="copyright">
+            拌飯特餐 by 桌遊拌飯<br> ARCHETYPE Rd., Taipei, Taiwan <br> Sent to iamcdxn@gmail.com — <a>Unsubscribe</a><br> Delivered by TinyLetter
+        </div>
+    </footer>
 </body>
+
 </html>
