@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>桌遊拌飯電子報 - 創刊號 Vol.1</title>
+  <style>
+    body {
+      background-color: #ebe7e1;
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Microsoft JhengHei", sans-serif;
+      color: #444444;
+    }
+
+    #main-section {
+      width: 600px;
+      margin: 0 auto;
+    }
+
+    h1#title {
+      text-align: center;
+    }
+
+    p.subtitle {
+      text-align: center;
+      font-size: 20px;
+      letter-spacing: 1px;
+      margin: 0;
+    }
+
+    hr.normal {
+      border-top: 2px solid #444444;
+    }
+    hr.thick {
+      border-top: 5px solid #444444;
+    }
+
+    img#logo {
+      width: 270px;
+      height: 55px;
+    }
+
+    img#banner {
+      width: 550px;
+      height: 550px;
+      border: none;
+    }
+
+    div.image-container img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    div.image-container {
+      text-align: center;
+    }
+
+    div#banner-image-container {
+      margin: 39px 0;
+      border: none;
+    }
+
+    div.volume {
+      text-align: center;
+      margin-bottom: 39px;
+    }
+    div.volume p.volume-title {
+      font-size: 20px;
+      font-weight: 900;
+      margin: 0;
+    }
+    div.volume p.volume-date {
+      font-size: 15px;
+      font-weight: 500;
+      margin: 0;
+    }
+
+    h2.title {
+      font-size: 35px;
+      font-weight: 600;
+      text-indent: -24px;
+    }
+    h2.title > img {
+      width: 16px;
+      height: 36px;
+      padding-bottom: 5px;
+      vertical-align: middle;
+    }
+
+    p.content {
+      font-size: 16px;
+      line-height: 1.75;
+      padding: 0 25px;
+    }
+
+    div.callout {
+      border-radius: 5px;
+      padding: 16px 18px;
+      margin: 16px 25px;
+      background-color: #e1ddd6;
+      line-height: 1.75;
+    }
+
+    div.work {
+      border: solid 3px #444444;
+      padding: 44px 25px 31px;
+      margin-bottom: 35px;
+    }
+
+    div.work figure.type {
+      margin-bottom: 41px;
+      text-align: center;
+    }
+
+    div.work h3 {
+      font-size: 22px;
+      font-weight: 600;
+      margin-top: 0;
+    }
+
+    div.work div.preview {
+      width: 550px;
+    }
+
+    div.work div.preview img {
+      max-width:100%;
+      max-height:100%;
+    }
+    
+    div.work p.work-content {
+      margin: 30px 0 25px;
+    }
+
+    img.youtube {
+      width: 170px;
+      height: 40px;
+    }
+
+    img.podcast {
+      width: 185px;
+      height: 46px;
+    }
+    
+    div.work div.cta {
+      text-align: center;
+    }
+
+    button {
+      width: 215px;
+      height: 46px;
+      background: #ebe7e1;
+      border: solid 2px #444444;
+      border-radius: 0;
+      font-size: 20px;
+      font-weight: 500;
+      color: #444444;
+      cursor: pointer;
+    }
+
+    div#footer-content {
+      padding: 35px 0;
+      margin: 0 auto;
+      width: 550px;
+      line-height: 2.5;
+    }
+
+    div#footer-content h4 {
+      font-size: 20px;
+      font-weight: 600;
+      margin: 0 0 20px;
+    }
+
+    table#works td.type {
+      width: 80px;
+    }
+
+    table#works td.link {
+      padding-left: 10px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #387cca;
+    }
+
+    img#footer-logo {
+      width: 186px;
+      height: 52px;
+    }
+
+    div#footer-logo-container {
+      margin: 39px 0 20px;
+    }
+
+    div#copyright {
+      text-align: center;
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 40px;
+      line-height: 2.5;
+    }
+
+    @media (max-width: 667px) {
+      body {
+        width: 100%;
+      }
+
+      div#wrapper {
+        overflow-x:hidden;
+      }
+
+      #main-section {
+        width: 100%;
+      }
+
+      img#banner {
+        width: 100%;
+        height: 100%;
+      }
+
+      div.work div.preview {
+        width: 100%;
+      }
+
+      div#footer-content {
+        width: 95%;
+      }
+
+      div.image-container {
+        padding: 12px;
+      }
+
+      div.image-container img {
+        max-width: 100%;
+        max-height: 100%;
+        margin: 0 auto;
+      }
+
+      div.work {
+        margin: 12px;
+        padding: 22px 25px 31px;
+        margin-bottom: 35px;
+      }
+
+      h2.title {
+        padding-left: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="wrapper">
+    <header>
+      <h1 id="title">
+        <img id="logo" src="images/logo.png" />
+      </h1>
+      <hr class="normal">
+      <p class="subtitle">
+        定時幫你補充桌遊營養素
+      </p>
+      <hr class="thick">
+    </header>
+
+    <section id="main-section">
+      <div class="image-container" id="banner-image-container">
+        <img id="banner" src="images/banner.png" />
+      </div>
+      <div class="volume">
+        <p class="volume-title">第 01 期 - 創刊號</p>
+        <p class="volume-date">JUNE 16, 2021</p>
+      </div>
+
+      <h2 class="title">
+        <img src="images/chop.png" />
+        <span>嗨！初次見面！</span>
+      </h2>
+      <p class="content">
+        哈囉，親愛的拌飯讀者們：
+      </p>
+      <p class="content">
+        我們今天要聊的主題是「遠端玩桌遊」這回事，距離上次和朋友們坐在同一張桌子上玩遊戲，應該有一個月那麼久了吧？原本我將遠端桌遊當成一種解饞用的臨時工具，在疫情肆虐下，它轉變成了近期主要的遊玩模式。
+      </p>
+      <p class="content">
+        雖然病毒限制了我們的相聚，桌上遊戲依舊能夠創造出共同體驗的環境，為我們缺乏共感的寂寥生活增添許多驚喜。希望我們能夠度過難關，下半年平安相見！在這之前，就好好地生活，在家玩遠端桌遊吧。至於遠端桌遊，有哪些優秀的平台可以選擇呢？
+      </p>
+
+      <div class="work">
+        <figure class="type">
+          <img class="podcast" src="images/podcast.png" />
+        </figure>
+        <h3>
+          【EP21】遠端桌遊的各種姿勢 - 救贖 x 翻桌 x 中離狗！
+        </h3>
+        <p class="work-content">
+          嗨，大家晚安，經過了各種遠端錄音的踩雷之後，我們終於跨出第一步啦！<br />這次要聊的是「嚴峻疫情下的桌遊人們，該怎麼解饞呢？遠端桌遊經驗大公開！」
+        </p>
+        <div class="cta">
+          <button onclick="window.open('https://link.chtbl.com/gs8Jde_z');">前往觀聽</button>
+        </div>
+      </div>
+
+      <div class="work">
+        <figure class="type">
+          <img class="youtube" src="images/youtube.png" />
+        </figure>
+        <h3>
+          【桌遊拌飯】遠端桌遊 Top 3 推薦！拌飯新系統曝光！防疫解悶好夥伴～
+        </h3>
+        <div class="preview">
+          <img src="images/vol1/youtube_preview.jpeg" />
+        </div>
+        <p class="work-content">
+          嗨大家，這次我們要介紹的是我們心目中最好的遠端桌遊前三名！
+          我們還做了一個新的系統，錄音之前大家在後台上傳自己的名次，彼此都不曉得。讓這個名次公佈的瞬間更為精彩、出乎大家的意料！
+        </p>
+
+        <p class="work-content">
+          如果你也有推薦的遠端桌遊，歡迎留言告訴我們！
+        </p>
+        <div class="cta">
+          <button onclick="window.open('https://youtu.be/jQE3NxhoGTE');">前往觀看</button>
+        </div>
+      </div>
+
+      <p class="content">
+        接下來，我們來分享幾則讓人振奮的桌遊新聞吧！
+      </p>
+
+      <h2 class="title">
+        <img src="images/chop.png" />
+        <span>星際大爭霸，用無以名狀的恐怖之姿重生了！</span>
+      </h2>
+
+      <div class="image-container">
+        <img src="images/vol1/battlestar.jpeg" />
+      </div>
+
+      <p class="content">
+        《星際大爭霸 Battlestar: Galactica》是一款傳奇作品，它改編自 2004 年的同名科幻影集，在故事設定中，人類原是生存在被稱為「十二殖民地」的數個星球上的龐大種族，在與一種被稱為「賽隆人（Cylon）」的人造種族戰爭中，賽隆人大規模的核攻擊突襲摧毀了人類文明，僅剩一艘躲過攻擊的太空戰艦 Galactica 與殘存的五萬人口。他們背負著延續種族生命，以及在無垠宇宙中找到第十三殖民地–「地球」的艱鉅任務。
+      </p>
+
+      <div class="callout">
+        《星際大爭霸》的影集其實更歷史悠久，早在 1978 年首播，可惜收視不佳，一年後遭到腰斬。桌遊改編的是 2004 年的重開機版本，新版本的賽隆人有不同的起源故事，也加入了能夠仿真人類的設定，故事情節更為沉重、黑暗，包含人類受到賽隆人重創後的末日旅途、為了延續種族生命的道德兩難，以及兩個種族之間的衝突。
+      </div>
+
+      <p class="content">
+        他們不但要面對生存的挑戰、物資的匱乏、賽隆人的追擊，以及最致命的–高度仿真的賽隆人，擁有與人類無異的生理構造，他們混入了 Galactica 殘存的人類之中，甚至有可能取得了他人的信任、掌握大權，準備給予這個曾經偉大的人類文明最後一擊……。    </p>
+
+      <p class="content">
+        遊戲的重點就圍繞在「生存」與「仿真賽隆人」兩個危機之上，玩家在一開始會抽取陣營卡，決定你是人類還是賽隆人，而後者的目標就是盡可能地搞破壞，只要人類的生存條件–燃料、人口、食物或士氣其一歸零，賽隆人就能獲得勝利。遊戲中除了角色技能之外，玩家還會被分配到兩個特別的職務，「艦長」能夠控制戰艦的航向，「總統」則掌握了執行行政命令的權力，一旦賽隆人被分配到這兩種職位，那人類的未來可就岌岌可危了！
+      </p>
+
+      <p class="content">
+        讀者們應該可以想像，這絕對是一個充滿爾虞我詐、指責、謊言與背叛的遊戲，尤其是當你發現和你一起駕駛戰機出生入死的好戰友居然是賽隆人，或是那個被你關入大牢裡的人只是被賽隆人的花言巧語給誣陷 …… 真的會讓你想掐死朋友啊！
+      </p>
+
+      <p class="content">
+        遊戲好玩是好玩，但成為傳奇還有另外一個原因 …… 就是 FFG 早已失去出版星際大爭霸主題遊戲的權利，傳奇成為絕響，它也成為了二手交易版上的一顆流星，只要出現就會瞬間被買走而消失，價格也是原價的數倍（想當年，我在大學時用原價購入，卻因為年少不懂事把它賣掉了，悔恨至今）。而玩家們也引頸期盼，有一天能夠看到《星際大爭霸》重生的一天。
+      </p>
+
+      <p class="content">
+        <strong>那天，終於來了！</strong>
+      </p>
+
+      <p class="content">
+        雖然和想像中的不太一樣，但是《星際大爭霸》真的復活了，以無以名狀的恐怖之姿。它被換上了克蘇魯神話的主題，加入 FFG 的 Arkham Horror Files 系列作品。
+      </p>
+
+      <div class="image-container">
+        <img src="images/vol1/unfathomable.png" />
+      </div>
+
+      <p class="content">
+        新作品《Unfathomable》的故事來到二十世紀初，客船「大西洋號」原本該平安地駛向波士頓，卻在大西洋遭遇了難以解釋的神秘事件。玩家扮演大西洋號上的船員，試圖在洶湧危險的海域中渡過難關，但事情並沒有那麼簡單，混血深潛者–一種住在海底的類人種族與人類生下的子嗣，他們有著與人類無異的外表–混入了我們之中。玩家們除了解決生存危機之外，還得面對這些試圖從內部瓦解隊伍的異人們。
+      </p>
+
+      <p class="content">
+        按照 FFG 的發表介紹，《Unfathomable》與《星際大爭霸》有著相同的機制，規則會不會有小幅度的修改呢？後續消息，我們繼續期待！遊戲將在今年九月上市。
+      </p>
+
+      <h2 class="title">
+        <img src="images/chop.png" />
+        <span>詭鎮奇談的下一站：瘋狂山脈</span>
+      </h2>
+
+      <div class="image-container">
+        <img src="images/vol1/edge_of_earth.png" />
+      </div>
+
+      <p class="content">
+        依舊是來自 FFG 的新消息，《詭鎮奇談：卡牌版》宣布了新的擴充《Edge of the Earth（地球邊緣）》，這次玩家們即將前往位於酷寒的南極大陸，令人望之生畏的黑色山脈！
+      </p>
+
+      <p class="content">
+        而這次也宣布了不同的擴充出版方式：以往《詭鎮奇談》的每個擴充稱為「一個循環」，這個說法來自於過去 FFG 的成長式卡牌（LCG）系列，因為他們通常會週期式地出版小盒擴充，讀者們可以把《詭鎮奇談》想像成一部影集，分成許多季（循環），每季之間雖然有著不同主題，卻共享同一個世界觀。像是第一循環《敦威治遺產》從米斯卡塔尼克大學的教授失蹤案開始，而第二循環《卡爾克薩之路》則是與黃衣之王息息相關。
+      </p>
+
+      <p class="content">
+        以往的循環會先出版一個大擴充，包含新的調查員、調查員卡牌和起始劇本，後續每個月再出版小盒的 Mythos Pack，內含新的劇本和卡牌。這次《Edge of the Earth》將採取不同的出版方式，將整個循環分為「調查員擴充」與「劇本擴充」兩種。
+      </p>
+
+      <p class="content">
+        簡單說，玩家不需要每個月苦苦等待新的 Mythos Pack 了，這一次的「所有劇本」都會放進一盒 60 美金的劇本擴充裡面，新的調查員和調查員卡牌則是放到 40 美金的調查員擴充。這樣對玩家有什麼好處呢？能想到的是，後來加入的玩家不用怕遇到中間的 Mythos Pack 斷貨，導致劇情無法接續的窘境了。但同樣的，我們無法事先知道劇本擴充裡面的劇本數量（官方說法是 "roughly the same amount of content as an entire cycle from our previous release model"），官方也提到這種出版方式能夠提供更多變的劇情走向，這讓我期待 FFG 這次能變出什麼魔法。
+      </p>
+
+      <p class="content">
+        回到這次的擴充，目前宣布的新調查員都是過去遊戲出現過的老朋友，有「全球驚慄的戰神」陳莉莉，以及占星老頭諾曼。這次的劇情故事中，你–一位南極調查隊的成員，在最危險的地方遇到最危險的事故，調查隊的飛機墜落在南極大陸上，你和僅存的調查隊成員必須想辦法在冰天雪地下生存，而塵封千年的冰層之下，又潛藏了什麼使人發狂的古老秘密呢？
+      </p>
+
+      <div class="image-container">
+        <img src="images/vol1/mountain_madness.jpeg" />
+      </div>
+
+      <p class="content">
+        如果你還沒看過獨步文化出版的漫畫《洛夫克拉夫特傑作集：瘋狂山脈》，真心推薦，一定會讓你對洛夫克拉夫特筆下的南極大陸更有深刻印象！
+      </p>
+
+      <h2 class="title">
+        <img src="images/chop.png" />
+        <span> The Hunger：魔法風雲會創作者的新作品</span>
+      </h2>
+
+      <div class="image-container">
+        <img src="images/vol1/the_hunger.jpeg" />
+      </div>
+    
+      <p class="content">
+        Richard Garfield 對卡牌設計的巧思，真的很難讓卡片遊戲的玩家拒絕他的作品，除了風靡全球的《魔法風雲會》之外，還有我很喜歡的成長式卡牌遊戲《Netrunner》，以及近期的《Keyforge 鍛鑰者》，他總是能設計出令人眼睛為之一亮的卡牌效果，這次的《The Hunger》主要機制是注重卡片的「牌組構築」，怎麼能讓人不期待呢？
+      </p>
+    
+      <p class="content">
+        《The Hunger》這款遊戲有個可愛的起源故事，四年前，Garfield 和他太太 Koni 在玩一款拼字遊戲時，將「肥」與「德古拉」兩個字拼在一起組成電影名稱，Garfield 開玩笑說這名字做成遊戲應該會更好玩，於是就產生了這款作品。在《The Hunger》中，玩家扮演的是吸血鬼，你必須在夜晚出門吸血來填飽肚子，並在陽光出來（遊戲結束）之前回到城堡，以免魂飛魄散。
+      </p>
+
+      <p class="content">
+        每個回合，你可以購得「幫手」、「能力」來強化你的牌庫，也可以透過「狩獵」人類來獲得分數，但你吃掉的人類越多，這些人類卡片在你的牌庫裡會拖慢你的移動速度。在遊戲接近結束時，你就越難以回到安全的城堡，而且你若沒有成功躲避陽光，就會直接被淘汰出局，再多的分數都沒辦法勝利。也許「肥德古拉」的形象就在於吃飽喝著、頂著肚子的吸血鬼趕著跑回家的情境中吧！
+      </p>
+
+      <p class="content">
+        遊戲預計於今年九月上市，目前已經釋出規則書，有興趣的朋友們，可以到 BGG 上看看！
+      </p>
+
+      <h2 class="title">
+        <img src="images/chop.png" />
+        <span>文藝復興和平 - 為歷史控搭建的歐洲大舞台</span>
+      </h2>
+
+      <div class="image-container">
+        <img src="images/vol1/pax_renassiance.jpeg" />
+      </div>
+
+      <p class="content">
+        《文藝復興和平》是我近期玩到最喜歡的遊戲！
+      </p>
+
+      <p class="content">
+        想要嘗試不同於兵推、補給與戰鬥的遊戲體驗嗎？這一次，我們要來當運籌帷幄的銀行家！身為文藝復興的創投公司，我們投資的是君主、教宗與軍隊，用金錢來影響世界，套一句選舉文宣－歐洲的未來在你手中。
+      </p>
+
+      <p class="content">
+        作為一個歷史主題的桌上遊戲，《Pax Renaissance》提供了歷史控們一個充滿可能性的舞台，神聖羅馬帝國守不住東界，鄂圖曼一統中歐？新教革命提早爆發，西歐遍地開花？君權式微，各國紛紛轉向共和政體？這些看似瘋狂的平行宇宙都可能在遊戲中發生，而且是透過你我的行動來影響這些事件，這讓我在購入前，光看簡介就感到躍躍欲試。
+      </p>
+
+      <div class="work">
+        <h3>
+          【桌遊心得】文藝復興和平
+        </h3>
+        <p class="work-content">
+          詳細心得歡迎到方格子上來閱讀！
+        </p>
+        <div class="cta">
+          <button onclick="window.open('https://vocus.cc/boardgame-ban-fan/60c8e3d9fd8978000162d124');">前往閱讀</button>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <hr class="normal">
+      <div id="footer-content">
+        <h4>拌飯精選配菜</h4>
+        <table id="works">
+          <tbody>
+            <tr>
+              <td class="type">Podcast</td>
+              <td>|</td>
+              <td class="link">
+                <a href="https://link.chtbl.com/gs8Jde_z" target="_blank">【桌遊拌飯 EP21 - 遠端桌遊的各種姿勢】</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="type">Youtube</td>
+              <td>|</td>
+              <td class="link">
+                <a href="https://youtu.be/jQE3NxhoGTE" target="_blank">遠端桌遊 Top 3 推薦！拌飯新系統曝光！防疫解悶好夥伴～</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="type">Article</td>
+              <td>|</td>
+              <td class="link">
+                <a href="https://vocus.cc/boardgame-ban-fan/60aa3482fd89780001a9bc41" target="_blank">【桌遊介紹】《漫威：集結》如何擄獲玩家的心與錢包？</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <hr class="thick">
+      <div class="image-container" id="footer-logo-container">
+        <a href="https://www.facebook.com/BoardGameBanFan" target="_blank">
+          <img id="footer-logo" src="images/footer-logo.png" />
+        </a>
+      </div>
+      <!-- <div id="copyright">
+        拌飯特餐 by 桌遊拌飯<br>
+        ARCHETYPE Rd., Taipei, Taiwan <br>
+        Sent to iamcdxn@gmail.com — <a>Unsubscribe</a><br>
+        Delivered by TinyLetter
+      </div> -->
+    </footer>
+  </div>
+</body>
+</html>
